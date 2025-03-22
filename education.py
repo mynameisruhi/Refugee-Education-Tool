@@ -14,7 +14,7 @@ load_dotenv()
 # Access your variables
 api_key = os.getenv("API_KEY")
 
-genai.configure(api_key="")
+genai.configure(api_key=api_key)
 model = genai.GenerativeModel("gemini-1.5-flash")
 
 language = input("What language do you speak? ")
